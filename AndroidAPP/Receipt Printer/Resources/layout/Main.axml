@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/MainLayout">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="69.0dp"
+                android:id="@+id/linearLayout1"
+                android:layout_marginTop="10.0dp">
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/radioGroup1"
+                    android:layout_gravity="left">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="立即打印"
+                        android:id="@+id/radioButtonNow"
+                        android:layout_marginLeft="10.0dp"
+                        android:layout_marginRight="15.0dp" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="预约时间"
+                        android:id="@+id/radioButtonReserve"
+                        android:layout_marginLeft="10.0dp"
+                        android:layout_marginRight="15.0dp"
+                        android:layout_gravity="bottom" />
+                </RadioGroup>
+                <TextView
+                    android:text="yyyy/MM/dd"
+                    android:layout_width="100.0dp"
+                    android:layout_height="40.0dp"
+                    android:id="@+id/textViewDate"
+                    android:layout_marginRight="10.0dp"
+                    android:gravity="center"
+                    android:layout_marginTop="28.0dp"
+                    android:layout_marginLeft="20.0dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:text="HH:mm"
+                    android:layout_width="80.0dp"
+                    android:layout_height="40.0dp"
+                    android:id="@+id/textViewTime"
+                    android:gravity="center"
+                    android:layout_marginBottom="0.0dp"
+                    android:layout_marginTop="28.0dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <CheckBox
+                android:text="标题"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBoxTitle"
+                android:layout_marginTop="20.0dp"
+                android:layout_marginLeft="10.0dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50.0dp"
+                android:id="@+id/editTextTitle" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayoutTitle"
+                android:gravity="center">
+                <CheckBox
+                    android:text="粗体"
+                    android:layout_width="65.0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkBoxTitleBold"
+                    android:layout_marginRight="10.0dp"
+                    android:layout_marginLeft="0.0dp" />
+                <TextView
+                    android:text="对齐"
+                    android:layout_width="40.0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textViewTitleAlign"
+                    android:layout_marginRight="10.0dp"
+                    android:gravity="center" />
+                <Spinner
+                    android:layout_width="100.0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spinnerTitleAlign"
+                    android:layout_marginRight="10.0dp" />
+                <TextView
+                    android:text="字号"
+                    android:layout_width="40.0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textViewTitleSize"
+                    android:layout_marginRight="10.0dp"
+                    android:gravity="center" />
+                <Spinner
+                    android:layout_width="100.0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spinnerTitleSize" />
+            </LinearLayout>
+            <CheckBox
+                android:text="正文"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBoxText"
+                android:layout_marginTop="20.0dp"
+                android:layout_marginLeft="10.0dp" />
+            <EditText
+                android:inputType="textMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="100.0dp"
+                android:id="@+id/editTextText"
+                android:isScrollContainer="true"
+                android:layout_gravity="fill" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayoutText"
+                android:gravity="center">
+                <CheckBox
+                    android:text="粗体"
+                    android:layout_width="65.0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkBoxTextBold"
+                    android:layout_marginLeft="0.0dp"
+                    android:layout_marginRight="10.0dp" />
+                <TextView
+                    android:text="对齐"
+                    android:layout_width="40.0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textViewTextAlign"
+                    android:gravity="center"
+                    android:layout_marginRight="10.0dp" />
+                <Spinner
+                    android:layout_width="100.0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spinnerTextAlign"
+                    android:layout_marginRight="10.0dp" />
+                <TextView
+                    android:text="字号"
+                    android:layout_width="40.0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textViewTextSize"
+                    android:layout_marginRight="10.0dp"
+                    android:gravity="center" />
+                <Spinner
+                    android:layout_width="100.0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spinnerTextSize" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayoutButton"
+                android:gravity="center"
+                android:layout_marginTop="30.0dp">
+                <Button
+                    android:text="发送"
+                    android:id="@+id/buttonSend"
+                    android:layout_width="240.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20.0dp" />
+                <Button
+                    android:text="重置"
+                    android:id="@+id/buttonReset"
+                    android:layout_width="120.0dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
